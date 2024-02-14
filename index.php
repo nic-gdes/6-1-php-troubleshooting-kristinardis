@@ -1,7 +1,7 @@
 <h3>Question 1</h3>
 <?php
   // Question 1
-  echo "Hello, World <br />"
+  echo "Hello, World <br />";
   echo "Hello back";
 ?>
 
@@ -10,7 +10,7 @@
 
 <?php
   // Question 2
-  $greeting = "Good morning";
+  $Greeting = "Good morning";
   echo $Greeting;
 ?>
 
@@ -21,7 +21,7 @@
   // Question 3
   $firstName = "John";
   $lastName = "Doe";
-  echo "Name: " + $firstName + " " + $lastName;
+  echo "Name: " . "$firstName" . " " . "$lastName";
 ?>
 
 <hr />
@@ -29,19 +29,18 @@
 
 <?php
   // Question 4
-  $colors = array("Red", "Green", "Blue";
+  $colors = array("Red", "Green", "Blue");
   echo $colors[1];
 ?>
 
 <hr />
 <h3>Question 5</h3>
 
-<?php
-  // Question 5
-  function greet($name) {
+function greet($name) {
     echo "Hello, " . $name;
-  }
-  greet();
+}
+
+greet("John"); 
 ?>
 
 <hr />
@@ -63,17 +62,19 @@
 <?php
   // Question 7
   $count = 0;
-  echo 'Count: ' + ++$count;
+echo 'Count: ' . ++$count;
 ?>
 
 <hr />
 <h3>Question 8</h3>
 
-<?php
+
   // Question 8
-  define("GREETING", "Hello, everyone.");
-  echo GREETINGS;
+  <?php
+define("GREETING", "Hello, everyone.");
+echo GREETING;
 ?>
+ 
 
 <hr />
 <h3>Question 9</h3>
@@ -90,7 +91,6 @@
 <h3>Question 10</h3>
 
 <?php
-  // Question 10
-  $user = array("name" => "John Doe", "age" => 30);
-  echo $user[name];
+$user = array("name" => "John Doe", "age" => 30);
+echo $user["name"];
 ?>
